@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,7 +128,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Backpack.cpp" />
+    <ClCompile Include="Berry.cpp" />
+    <ClCompile Include="Bump.cpp" />
+    <ClCompile Include="Bush.cpp" />
+    <ClCompile Include="Fruit.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Tree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Backpack.h" />
+    <ClInclude Include="Berry.h" />
+    <ClInclude Include="Brood.hpp" />
+    <ClInclude Include="Bump.h" />
+    <ClInclude Include="Bush.h" />
+    <ClInclude Include="Fruit.h" />
+    <ClInclude Include="Plants.hpp" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Size.hpp" />
+    <ClInclude Include="Tree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
