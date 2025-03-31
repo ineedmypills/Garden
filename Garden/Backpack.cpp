@@ -7,10 +7,16 @@ void Backpack::CatchFruit(const Brood& brood)
 
 void Backpack::GetBackpackContent()
 {
-	
-	for (auto &i : fructus)
+	if (size(fructus) == 0)
 	{
-		
-		std::cout << i;
+		std::cout << "Ðþêçàê ïóñò :(";
+	}
+	else
+	{
+		for (auto& i : fructus)
+		{
+
+			i.PrintBrood();
+		}
 	}
 }
