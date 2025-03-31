@@ -27,12 +27,17 @@ void Start()
 	Berry cherry("cherry", 0.1);
 	Bump shishka("shishka", 0.3);
 
-	std::cout << "\n1 - Бобер.\n2 - Егор.\n3 - Пашок.\n4 - Владоооофалееес.\n5 - Кулебяка с мясом.\n";
+	system("cls");
+	std::cout << "\n1 - Бобер.\n2 - Егор.\n3 - Пашок.\n4 - Владоооофалееес.\n5 - Кулибяка с мясом.\n0 - Закрыть консоль.\n";
 	std::cout << "Какого игрока выберем: \n";
 	std::string number;
 	std::cin >> number;
 
-	if (number == "1")
+	if (number == "0")
+	{
+		
+	}
+	else if (number == "1")
 	{
 		system("cls");
 		Player Bober;
@@ -40,6 +45,8 @@ void Start()
 		Bober.CatchFruit(cherry);
 		std::cout << "\t\tРюкзачек Бобра!!!!!!\n";
 		Bober.PrintBackpack();
+		system("pause");
+		Start();
 	}
 	else if (number == "2")
 	{
@@ -50,6 +57,8 @@ void Start()
 		Egor.CatchFruit(apple);
 		std::cout << "\t\tРюкзачек Егора!!!!!!\n";
 		Egor.PrintBackpack();
+		system("pause");
+		Start();
 	}
 	else if (number == "3")
 	{
@@ -57,6 +66,8 @@ void Start()
 		Player TIyTIa;
 		std::cout << "\t\tРюкзачек Пашка!!!!!!\n";
 		TIyTIa.PrintBackpack();
+		system("pause");
+		Start();
 	}
 	else if (number == "4")
 	{
@@ -65,21 +76,22 @@ void Start()
 		vladooofaleees.CatchFruit(shishka);
 		std::cout << "\t\tРюкзачек Владоооофалееес!!!!!!\n";
 		vladooofaleees.PrintBackpack();
+		system("pause");
+		Start();
 	}
 	else if (number == "5")
 	{
 		system("cls");
-
+		Player kulebiaka;
+		kulebiaka.CatchFruit(shishka);
+		kulebiaka.CatchFruit(cherry);
+		std::cout << "\t\tРюкзачек кулибяки с мясом!!!!!!\n";
+		kulebiaka.PrintBackpack();
+		system("pause");
+		Start();
 	}
 	else
 	{
 		std::cout << "Ошибка ввода.";
 	}
-	
-	
-	
-	
-	
-	
-	
 }

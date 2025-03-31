@@ -7,9 +7,10 @@ void Backpack::CatchFruit(const Brood& brood)
 
 void Backpack::GetBackpackContent()
 {
-	if (size(fructus) == 0)
+	
+	if (fructus.size() == 0)
 	{
-		std::cout << "Ðþêçàê ïóñò :(";
+		std::cout << "Ðþêçàê ïóñò :(\n";
 	}
 	else
 	{
