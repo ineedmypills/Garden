@@ -4,6 +4,7 @@
 #include<iostream>
 #include<string_view>
 
+using enum Size;
 class Plants
 {
 public:
@@ -11,7 +12,7 @@ public:
 	~Plants() {}
 	void PrintPlants() {
 		std::cout << "Название: " << GetName() << std::endl;
-		std::cout << "Размер: " << GetSize() << std::endl;
+		std::cout << "Размер: " << static_cast<char>(GetSize()) << std::endl;
 		std::cout << "Рост: " << GetHeight() << std::endl;
 	}
 		
