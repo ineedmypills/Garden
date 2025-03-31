@@ -11,6 +11,6 @@ void Backpack::GetBackpackContent()
 	for (auto &i : fructus)
 	{
 		
-		std::cout << i;
+		i.PrintBrood();
 	}
 }
