@@ -8,7 +8,9 @@ class Backpack
 {
 public:
 	void CatchFruit(const Brood& brood);
+	void GetBackpackContent();
 private:
-	std::vector<std::unique_ptr<Brood>> fructus;
+	std::vector<Brood> fructus;
+	
 };
 
